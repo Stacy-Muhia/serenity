@@ -1,53 +1,130 @@
-@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700&display=swap');
 
-:root{
-    --blue:#89C1D2;
+:root {
+    --blue: #89C1D2;
     --black: #444;
     --yellow: #FE9E0D;
-    --box-shadow: .5rem .5rem 0 rgba(113, 218, 236, 0.2);
-    --text-shadow: .4rem .4rem 0 rgba(0, 0, 0, .2);
-    --border: .2rem solid var(--blue);
-    
+    --light-grey: #f0f0f0;
+    --box-shadow: 0 0.5rem 1.5rem rgba(113, 218, 236, 0.2);
+    --text-shadow: 0 0.4rem 0 rgba(0, 0, 0, 0.2);
+    --border: 0.2rem solid var(--blue);
 }
-*{
-    font-family: "Mukta", sans-serif;
+
+* {
+    font-family: 'Mukta', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: none; border: none;
+    outline: none;
+    border: none;
     text-transform: capitalize;
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     text-decoration: none;
-      
 }
-html{
-    font-size: 70.5%;
+
+html {
+    font-size: 62.5%; /* 1rem = 10px */
     overflow-x: hidden;
     scroll-padding-top: 7rem;
     scroll-behavior: smooth;
 }
-.logo img {
-    width: 100px; 
-    height: auto;
-}
-.header{
+section{
     padding: 2rem 9%;
+}
+
+body {
+    font-size: 1.6rem; /* 16px */
+    background-color: var(--light-grey);
+    color: var(--black);
+    line-height: 1.6;
+}
+
+.header {
+    padding: 1.5rem 9%;
     position: fixed;
-    top:0; left: 0; right: 0;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 1000;
-    box-shadow: 0 .5rem .1.5rem rgba(0, 0, 0, .1);
+    box-shadow: var(--box-shadow);
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: #fff;
 }
-.header .navbar a{
-    font-size: 1.7rem;
-    color: #444;
-    margin-left: 2rem;
+
+.logo-container {
+    display: flex;
+    align-items: center;
 }
-.header .navbar a:hover{
-    font-size: 1.7rem;
-    color: var(--blue);
+
+.logo {
+    width: 80px; 
+    height: auto;
+    margin-right: 0.5rem;
+}
+
+.site-name {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: var(--black);
+}
+
+.header .navbar {
+    display: flex;
+    align-items: center;
+}
+
+.header .navbar a {
+    font-size: 1.8rem;
+    color: var(--black);
     margin-left: 2rem;
+    position: relative;
+}
+
+.header .navbar a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: var(--blue);
+    transition: width 0.4s ease;
+}
+
+.header .navbar a:hover::after {
+    width: 100%;
+    left: 0;
+    background: var(--blue);
+}
+
+.header .navbar a:hover {
+    color: var(--blue);
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 10rem;
+}
+
+.home .content{
+    flex: 1; /* Take up remaining space */
+}
+
+.home .content h3, .home .content p {
+    text-align: left; /* Align text to the right */
+}
+
+.home .image{
+    flex: 0 0 45%; /* Adjust the width of the image container */
+    margin-right: 1.5rem; /* Add margin to separate the image from the text */
+}
+
+.home .image img{
+    width: 100%;
 }
