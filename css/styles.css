@@ -99,7 +99,7 @@ body {
 }
 .main-home{
     padding: 2rem 7%;
-    background-image: url(../images/background.jpg);
+    background-image: url(../images/background.jpeg);
     width:100%;
     min-height: 100vh;
     background-size: cover;
@@ -112,7 +112,7 @@ body {
     align-items: center;
     flex-wrap: wrap;
     gap: 1.5rem;
-    padding-top: 36.8rem;
+    padding-top: 25rem;
 }
 .content h1 {
     font-size: 3rem;
