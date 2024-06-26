@@ -220,3 +220,64 @@ img{
     padding: 30px 40px;
     border-radius: 10px;
 }
+.write{
+    padding: 2rem 7%;
+    background: #fff;
+    text-align: center;  
+ }
+ p {
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color: var(--blue);
+  }
+  
+ #thought-form{
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 2rem;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    background-color: #f2f2f2;
+  }
+  button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 2rem;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: var(--blue);
+    color: #fff;
+    cursor: pointer;
+  }
+  ul {
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 50%;
+  }
+  li {
+    text-align: center;
+    padding: 10px;
+    font-size: 2rem;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  #timer {
+    display: block;
+    font-size: 2rem;
+    margin-top: 20px;
+    text-align: center;
+    color: #070707;
+  }
+  
+  #thoughts-list {
+    width: 550px;
+    word-wrap:break-word;
+    text-align: center;
+  }
