@@ -6,7 +6,8 @@
     <title>Serenity Hub</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -64,38 +65,80 @@
             </div>
         </div>
     </section>
-    <section class="log" id="log">
+    <!--<section class="log" id="log">
         <h1>Mood log</h1>
         <div class="wrapper">
             <div class="sec">
                 <div class="emoji">
                     <li><img src="images/angry.png"  alt="angry"></li>
-                    <!--<li><img src="images/shocked.png" alt="shocked"></li>
+                    <li><img src="images/shocked.png" alt="shocked"></li>
                     <li><img src="images/sad.png" alt="sad"></li>
                     <li><img src="images/bored.png" alt="bored"></li>
                     <li><img src="images/happy.jpg" alt="happy"></li>
                     <li><img src="images/perfect.png" alt="perfect"></li>
-                    <li><img src="images/excited.png" alt="excited"></li> -->
+                    <li><img src="images/excited.png" alt="excited"></li> 
                 </div>
             </div>
             <div class="slider">
                 <input type="range" min="0" max="100" value="0">
             </div>
         </div>
-    </section>
-    <section class="graph">
-        <h2>Visualizations</h2>
-    </section>
-    <section class="write">
-        <h1>Vent</h1>
-        <p>Express yourself freely. Rant, vent, or share your thoughts. All entries will vanish after 10 seconds.</p>
-        <form id="thought-form">
-          <input type="text" id="thought" placeholder="Type your thought here...">
-          <button type="submit">Submit</button>
+    </section>-->
+    <section class="log">
+        <h2>Mood Log</h2>
+        <form>
+            <label for="mood">How are you feeling today?</label>
+            <select id="mood" name="mood">
+                <option value="">Select a mood</option>
+                <option value="happy">Happy 😀</option>
+                <option value="sad">Sad 😥</option>
+                <option value="angry">Angry 😤</option>
+                <option value="excited">Excited 🤗</option>
+                <option value="calm">Calm 🙂</option>
+                <option value="other">Other (please specify)</option>
+            </select>
+            <input type="text" id="other-mood" placeholder="Enter your mood">
+            <button type="submit">Log Mood</button>
         </form>
-        <ul id="thoughts-list"></ul>
-        <span id="timer"></span>
-      </section>
+        <div class="mood-log-results">
+            <h3>Recent Moods:</h3>
+            <ul id="mood-log-list"></ul>
+        </div>
+        <div class="graph-container">
+            <div id="chartContainer">
+                <canvas id="moodChart"></canvas>
+            </div>
+        </div>
+    </section>    
+    <section class="write">
+      <h2>Reflections</h2>
+      <p>Express yourself freely. Rant, vent, or share your thoughts. All entries will vanish after 10 seconds.</p>
+      <form id="thought-form">
+        <input type="text" id="thought" placeholder="Type your thought here...">
+        <button type="submit">Submit</button>
+      </form>
+      <ul id="thoughts-list"></ul>
+      <span id="timer"></span>
+    </section>
+ 
+    <section class="footer">
+        <h4>Connect with Us</h4>
+        <div class="icon">
+            <a href="https://github.com/Stacy-Muhia/serenity" target="_blank">
+            <i class='bx bxl-github'></i>
+            </a>
+            <a href="https://github.com/Stacy-Muhia/serenity" target="_blank">
+            <i class='bx bxl-instagram'></i>
+            </a>
+            <a href="https://www.linkedin.com/in/stacy-muhia-218a7326b/" target="_blank">
+            <i class='bx bxl-linkedin-square'></i>
+            </a>
+            <a href="https://x.com/mstaciew" target="_blank">
+            <i class='bx bxl-twitter'></i>
+            </a>
+        </div>
+        <p>Project by <i class='bx bx-heart'></i></i><br/> Stacy Muhia</p>
+    </section>
     <script src="js/script.js"></script>
 </body>
 </html>

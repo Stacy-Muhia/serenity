@@ -281,3 +281,105 @@ img{
     word-wrap:break-word;
     text-align: center;
   }
+  .log {
+    padding: 2rem 7%;
+    background: #fff;
+    text-align: center;
+}
+.log {
+    margin-top: 50px; 
+}
+
+.log h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.log form {
+    margin-bottom: 20px;
+}
+
+.log label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.log select, .log input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.log button[type="submit"] {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.log button[type="submit"]:hover {
+    background-color: var(--blue);
+}
+
+.log .mood-log-results {
+    margin-top: 20px;
+}
+
+.log .mood-log-results h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.log ul {
+    list-style: none;
+    padding: 0;
+}
+
+.log li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+}
+#chartContainer {
+    width: 50%; 
+    margin: auto;
+    padding: 2rem 0;
+}
+
+canvas {
+    width: 100%; 
+    height: auto;
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: var(--blue);
+}
+.footer h4{
+    font-size: 2rem;
+    color: #444;
+    margin-bottom: 0.1rem;
+} 
+.footer p{
+    font-size: 1.8rem;
+    color: #444;
+    margin-bottom: 0.1rem;
+}
+.icon i {
+    color: #444;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-right: 1rem;
+}
