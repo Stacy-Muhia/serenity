@@ -125,6 +125,7 @@ body {
 }
 .content p {
     font-size: 2rem;
+    color: #000000;
 }
 .button{
     padding: 1.5rem;
@@ -191,7 +192,7 @@ h3{
   color: #333;
   font-weight: 600;
   cursor: pointer;
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;  /* Add transitions with ease-in-out */
+transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;  
 }
 
 .more:hover {
