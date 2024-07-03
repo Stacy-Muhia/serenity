@@ -97,6 +97,149 @@ body {
 .header .navbar a:hover {
     color: var(--black);
 }
+.sign {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    padding: 2rem;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* General styles for form headings */
+  .sign h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Input box container */
+  .input-box {
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Input elements */
+  .input-box input {
+    width: 100%;
+    padding: 0.75rem 2.5rem 0.75rem 1rem;
+    border: 1px solid #444;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  /* Icon positioning inside input box */
+  .input-box i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #444;
+  }
+  
+  /* Remember me and forgot password container */
+  .remember {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Checkbox label */
+  .remember label {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  /* Forgot password link */
+  .remember a {
+    font-size: 0.9rem;
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  .remember a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Button styles */
+  .btn {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #89C1D2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .btn:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Register and Login link container */
+  .reg-link {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .reg-link p {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  /* Register and Login link button */
+  .reg-link button {
+    background: none;
+    border: none;
+    color: #3498db;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .reg-link button:hover {
+    color: var(--blue);
+  }
+  
+  /* Modal styles */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    color: #aaa;
+    cursor: pointer;
+  }
+  
+  .close:hover {
+    color: #333;
+  }
 .main-home{
     padding: 2rem 7%;
     background-image: url(../src/images/background.jpeg);
@@ -112,7 +255,7 @@ body {
     align-items: center;
     flex-wrap: wrap;
     gap: 1.5rem;
-    padding-top: 25rem;
+    padding-top: 40rem;
 }
 .content h1 {
     font-size: 3rem;
@@ -127,19 +270,6 @@ body {
     font-size: 2rem;
     color: #000000;
 }
-.button{
-    padding: 1.5rem;
-    font-size: 2rem;
-    color: black;
-    border: 3px solid black;
-    text-decoration: bold;
-    cursor: pointer;
-    text-align: center;
- }
- .button:hover{
-    color: white;
-
- }
  .nook {
     padding: 2rem 7%;
     background: #fff;
@@ -406,10 +536,11 @@ canvas {
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     margin: 0;
+    color: #fff;
   }
   
   .footer-bottom {
-    background: lightseagreen;
+    background: var(--blue);
     padding: 10px 0;
   }
   
