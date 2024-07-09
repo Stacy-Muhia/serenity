@@ -101,35 +101,48 @@ body {
     width: 100%;
     max-width: 400px;
     margin: auto;
-    padding: 2rem;
+    padding: 30px 40px;
     background-color: #f7f7f7;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
-  
+
   /* General styles for form headings */
   .sign h1 {
     margin-bottom: 1rem;
-    font-size: 2rem;
+    font-size: 36px;
     color: #333;
     text-align: center;
   }
-  
+
   /* Input box container */
   .input-box {
     position: relative;
     margin-bottom: 1.5rem;
-  }
-  
-  /* Input elements */
-  .input-box input {
     width: 100%;
-    padding: 0.75rem 2.5rem 0.75rem 1rem;
-    border: 1px solid #444;
-    border-radius: 5px;
-    font-size: 1rem;
+    height: 50px;
+    margin: 30px 0;
   }
-  
+
+  input[type="email"] {
+    text-transform: none;
+  }
+
+  /* Input elements */
+
+  .input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid #000;
+    border-radius: 40px;
+    font-size: 16px;
+    padding: 20px 45px 20px 20px;
+}
+
+ 
   /* Icon positioning inside input box */
   .input-box i {
     position: absolute;
@@ -240,6 +253,62 @@ body {
   .close:hover {
     color: #333;
   }
+
+
+.input-box input::placeholder{
+    color: #000;
+}
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top: 30%;
+    transform: translate(-50%);
+    font-size: 20px;
+}
+.remember{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.9px;
+    margin: -15px 0 15px;
+}
+.remember label input{
+    accent-color: #000;
+    margin-right: 3px;
+}
+.remember a{
+    color: #000;
+    text-decoration: none;
+}
+.remember a:hover{
+    text-decoration: underline;
+}
+.button{
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #000;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.reg-link{
+    font-size: 14.9px;
+    text-align: center;
+    margin-top: 20px;
+}
+.reg-link p a{
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+}
+.reg-link p a:hover{
+    text-decoration: underline;
+}
 .main-home{
     padding: 2rem 7%;
     background-image: url(../src/images/background.jpeg);
@@ -509,7 +578,7 @@ canvas {
   
   .footer-content h4 {
     font-family: 'Orbitron', sans-serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 20px;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -523,35 +592,35 @@ canvas {
   
   .footer .icon a {
     color: white;
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin: 0 10px;
     transition: color 0.3s ease;
   }
   
   .footer .icon a:hover {
-    color: rgba(0, 0, 0, 0.1);
+    color: var(--blue);
   }
   
   .footer p {
     font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin: 0;
     color: #fff;
   }
   
   .footer-bottom {
-    background: var(--blue);
+    background:  rgba(0, 0, 0, 0.1);;
     padding: 10px 0;
   }
   
   .footer-bottom p {
-    font-size: 0.875rem;
+    font-size: 1.2rem;
     margin: 0;
     color: #ccc;
   }
   
   .footer .bx-heart {
-    color: #fff;
+    color: #e74c3c;
     animation: pulse 1s infinite;
   }
   

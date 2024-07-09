@@ -77,7 +77,7 @@ const Reflections = () => {
                 <p>If you feel like you're in a crisis, please talk to someone immediately:</p>
                 <ul>
                   <li><a href="https://www.emergencymedicinekenya.org/suicide/" target="_blank" rel="noopener noreferrer">Emergency Contact</a></li>
-                  <li><a href="https://www.enableme.ke/en/article/suicide-emergency-numbers-and-free-counselling-centers-in-kenya-3770/" target="_blank" rel="noopener noreferrer">Enable Me</a></li>
+                  <li><a href="https://findahelpline.com/countries/ke" target="_blank" rel="noopener noreferrer">Helpline</a></li>
                 </ul>
               </div>
             )}
