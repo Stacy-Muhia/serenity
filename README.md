@@ -22,4 +22,4 @@ Serenity Hub is a web application designed to help users log their daily moods a
 
 ## Contacts
 - **Stacy Muhia:** stacymuhiap@gmail.com
-- - **Project link:** /*to be updated*/
+- - **Project link:** https://serenity-scmf.vercel.app/
