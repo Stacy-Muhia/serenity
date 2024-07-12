@@ -632,87 +632,91 @@ canvas {
       transform: scale(1.2);
     }
   }
-  @media (max-width: 768px) {
-    .header {
-        padding: 1rem 5%;
-    }
-
-    .header .navbar a {
-        font-size: 1.6rem;
-        margin-left: 1.5rem;
-    }
-
-    .sign {
-        padding: 20px 30px;
-    }
-
-    .sign h1 {
-        font-size: 3rem;
-    }
-
-    .input-box input {
-        font-size: 14px;
-        padding: 15px 35px 15px 15px;
-    }
-
-    .btn {
-        padding: 0.5rem;
-        font-size: 0.9rem;
-    }
-
-    .main-home {
-        padding: 2rem 5%;
-    }
-
-    .content h1 {
-        font-size: 2.5rem;
-    }
-
-    .content p {
-        font-size: 1.8rem;
-    }
-}
-
-/* Phones */
-@media (max-width: 480px) {
-    .header {
-        padding: 0.5rem 2%;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .header .navbar a {
-        font-size: 1.4rem;
-        margin-left: 1rem;
-    }
-
-    .sign {
-        padding: 15px 20px;
-    }
-
-    .sign h1 {
-        font-size: 2.5rem;
-    }
-
-    .input-box input {
-        font-size: 12px;
-        padding: 10px 30px 10px 10px;
-    }
-
-    .btn {
-        padding: 0.4rem;
-        font-size: 0.8rem;
-    }
-
-    .main-home {
-        padding: 2rem 2%;
-    }
-
-    .content h1 {
-        font-size: 2rem;
-    }
-
-    .content p {
-        font-size: 1.5rem;
-    }
-}
+  /* Tablets and iPads */
+@media (max-width: 1024px) {
+  .main-home {
+     padding: 1.5rem 5%;
+   }
+ 
+  .home {
+     flex-wrap: wrap;
+     gap: 1rem;
+   }
+ 
+  .nook {
+     flex-direction: column;
+     align-items: center;
+   }
+ 
+  .grid-container {
+     grid-template-columns: repeat(1, 1fr);
+   }
+ 
+   #chartContainer {
+     width: 80%;
+   }
+ }
+ 
+ /* Phones */
+ @media (max-width: 768px) {
+  .main-home {
+     padding: 1rem 5%;
+   }
+ 
+  .home {
+     flex-direction: column;
+     align-items: center;
+   }
+ 
+  .nook {
+     padding: 1rem;
+   }
+ 
+  .grid-container {
+     grid-template-columns: repeat(1, 1fr);
+   }
+ 
+   #chartContainer {
+     width: 90%;
+   }
+ 
+  .chart {
+     font-size: 0.8rem;
+   }
+ 
+  .chart td {
+     padding: 0.5rem;
+   }
+ }
+ 
+ /* Small Phones */
+ @media (max-width: 480px) {
+  .main-home {
+     padding: 0.5rem 5%;
+   }
+ 
+  .home {
+     flex-direction: column;
+     align-items: center;
+   }
+ 
+  .nook {
+     padding: 0.5rem;
+   }
+ 
+  .grid-container {
+     grid-template-columns: repeat(1, 1fr);
+   }
+ 
+   #chartContainer {
+     width: 95%;
+   }
+ 
+  .chart {
+     font-size: 0.6rem;
+   }
+ 
+  .chart td {
+     padding: 0.2rem;
+   }
+ }
